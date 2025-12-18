@@ -68,11 +68,11 @@ CodePipeline should trigger and deploy the changes automatically within a few mi
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Anyone can transition to DevOps. The Steps are:</h1>
-    <h1>1. Trust the process</h1>
-    <h1>2. Work hard</h1>
-    <h1>3. Be consistent</h1>
-    <h1>4. Stay Hungry</h1>
+    <h3>Anyone can transition to DevOps. The Steps are:</h3>
+    <h3>1. Trust the process</h3>
+    <h3>2. Work hard</h3>
+    <h3>3. Be consistent</h3>
+    <h3>4. Stay Hungry</h3>
     <p>This website is deployed automatically via AWS CodePipeline & S3.</p>
 </body>
 </html>
