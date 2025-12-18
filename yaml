@@ -1,0 +1,35 @@
+
+---
+
+## 🛠️ Step-by-Step Guide
+
+### 1. Create the Repository
+
+1. Log into GitHub and create a new repository.
+2. Clone it locally and add the website files (`index.html`, CSS, images, etc.).
+3. Push your commits to the main branch.
+
+---
+
+### 2. Setup S3 Bucket for Static Hosting
+
+1. Go to the AWS Console  **S3**.
+2. Create a new bucket (e.g. "cicd-pipeline-static-website").
+3. Enable **Static website hosting** under **Properties**.
+4. Set `index.html` as the index document.
+5. Adjust **Bucket Policy** to allow public read access:
+
+```
+json (Bucket Policy)
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1748542260238",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::cicd-pipeline-static-website/*"
+    }
+  ]
+}
